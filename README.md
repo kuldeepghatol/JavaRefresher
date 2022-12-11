@@ -12,5 +12,5 @@ This repository includes
 7. Static 2D Array
 8. Dynamic Array i,e ArrayList 
 9. 2D ArrayList
-10 Strings
+10. Strings
 
