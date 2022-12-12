@@ -3,9 +3,35 @@ import java.util.Scanner;
 public class Static2DArray {
 
     public static void main(String[] args) {
-        simpleArrayInputAndPrint();
+        //simpleArrayInputAndPrint();
+        printWaveFormColumnWise();
     }
 
+    public static void printWaveFormColumnWise() {
+        Scanner s = new Scanner(System.in);
+
+        int n = s.nextInt();
+
+        int [][] arr = new int[n][n];
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                arr[i][j] = s.nextInt();
+            }
+        }
+
+        for (int i = 0; i < n; i++) {
+            if (i % 2 == 0) {
+                for (int j = 0; j < n; j++) {
+                    System.out.print(arr[j][i] + " ");
+                }
+            } else {
+                for (int j = n - 1; j >= 0; j--) {
+                    System.out.print(arr[j][i] + " ");
+                }
+            }
+        }
+    }
 
     public static void simpleArrayInputAndPrint() {
         System.out.print("Hello World");
